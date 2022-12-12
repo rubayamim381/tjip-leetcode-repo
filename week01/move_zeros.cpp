@@ -1,3 +1,5 @@
+//TC: O(n), MC:O(1)
+
 class Solution {
 public:
     void moveZeroes(vector<int>& nums) {
