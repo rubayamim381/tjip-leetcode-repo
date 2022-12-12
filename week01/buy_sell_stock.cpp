@@ -1,3 +1,5 @@
+//TC: O(n), MC: O(1)
+
 class Solution {
 public:
     int maxProfit(vector<int>& prices) {
