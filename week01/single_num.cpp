@@ -1,3 +1,5 @@
+//TC: O(n), M:O(1)
+
 class Solution {
 public:
     int singleNumber(vector<int>& nums) {
