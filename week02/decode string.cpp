@@ -3,8 +3,8 @@ class Solution {
 public:
     string decodeString(string s) {
 
-        stack <pair<string, int>> DecodedStr_stk;
-        DecodedStr_stk.push({"", 1});
+        stack <pair<string, int>> decoded_str_stk;
+        decoded_str_stk.push({"", 1});
         int str_count = 0;
 
         for(auto ch : s)
@@ -14,29 +14,29 @@ public:
 
             else if(ch == '[')
             {
-                DecodedStr_stk.push({"", str_count});
+                decoded_str_stk.push({"", str_count});
                 str_count = 0;
             }
 
             else if(ch == ']')
             {
-                string str = DecodedStr_stk.top().first;
-                int str_count = DecodedStr_stk.top().second;
-                DecodedStr_stk.pop();
+                string str = decoded_str_stk.top().first;
+                int str_count = decoded_str_stk.top().second;
+                decoded_str_stk.pop();
 
                 while(str_count--)
                 {
-                    DecodedStr_stk.top().first += str;
+                    decoded_str_stk.top().first += str;
                 }
             }
 
             else
             {
-                DecodedStr_stk.top().first.push_back(ch);
+                decoded_str_stk.top().first.push_back(ch);
             }
         }
 
-        return DecodedStr_stk.top().first;
+        return decoded_str_stk.top().first;
     }
 
     //example: 3[abc2[d]]
