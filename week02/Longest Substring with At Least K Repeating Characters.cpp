@@ -4,12 +4,11 @@
 class Solution {
 public:
 
-    int max_len = 0;
-
     int longestSubstringHelper(const string& s, int k, int start, int end) {
 
         vector<int> freq(26, 0);
-
+        int max_len = 0;
+        
         for (int i = start; i < end; ++i) {
             ++freq[s[i] - 'a'];
         }
