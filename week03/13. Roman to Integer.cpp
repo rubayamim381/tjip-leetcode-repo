@@ -1,3 +1,6 @@
+//approach 1
+//tc: O(n), mc: O(1)
+
 class Solution {
 public:
     int romanToInt(string s) {
