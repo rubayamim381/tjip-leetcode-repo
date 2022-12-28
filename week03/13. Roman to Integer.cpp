@@ -31,7 +31,7 @@ public:
 
         //for example
         //MCMXCIV
-        //total_value = roman[last_ch] = 5
+        //total_value = 0 + last character which is V = 5
         //loop from 'I' to 'M' :
             //IV = total_value - I = 5-1 =4
             //CIV = total_value + C = 4+100 = 104
