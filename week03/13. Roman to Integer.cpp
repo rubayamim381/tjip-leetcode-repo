@@ -1,8 +1,7 @@
 class Solution {
 public:
-    int romanToInt(string s) {
 
-        unordered_map<char, int> roman = {
+    unordered_map<char, int> roman = {
             {'I', 1},
             {'V', 5},
             {'X', 10},
@@ -11,6 +10,8 @@ public:
             {'D', 500},
             {'M', 1000}
         };
+        
+    int romanToInt(string s) {
 
         int last_idx = s.length()-1, total_value = 0;
 
