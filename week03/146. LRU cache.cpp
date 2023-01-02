@@ -2,8 +2,8 @@ class LRUCache {
 public:
 
     list<int> LRU; //for list the key value
-    map<int, int> key_value; //for put and get operation
-    map<int, list<int>::iterator> addr_mp; //for connecting it's address with LRU
+    unordered_map<int, int> key_value; //for put and get operation
+    unordered_map<int, list<int>::iterator> addr_mp; //for connecting it's address with LRU
     int max_capacity;
 
     LRUCache(int capacity) {
