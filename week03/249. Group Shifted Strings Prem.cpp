@@ -35,7 +35,8 @@ public:
             hashed_str[getHash(str)].push_back(str);
         }
 
-        for(auto p : hashed_str)
+        for(auto &p : hashed_str)
+
         {
             grouped_str.push_back(p.second);
         }
